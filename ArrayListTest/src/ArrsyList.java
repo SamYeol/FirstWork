@@ -15,6 +15,13 @@ public class ArrsyList {
 			String name = a.get(i);
 			System.out.println(name);
 		}
+		int longestIndex = 0;
+		for(int i =1; i<a.size(); i++) {
+			if(a.get(longestIndex).length() < a.get(i).length()) {
+				longestIndex = i;
+			}
+			System.out.println("가장 긴 이름은" + a.get(longestIndex));
+		}
 	}
 
 }
