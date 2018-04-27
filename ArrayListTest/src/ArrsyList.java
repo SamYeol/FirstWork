@@ -1,9 +1,20 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ArrsyList {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ArrayList<String> a = new ArrayList<String>();
+		Scanner sc = new Scanner(System.in);
+		for(int i = 0; i<4; i++) {
+			System.out.print("이름 입력 : ");
+			String s = sc.next();
+			a.add(s);
+		}
+		for(int i = 0; i<a.size(); i++) {
+			String name = a.get(i);
+			System.out.println(name);
+		}
 	}
 
 }
