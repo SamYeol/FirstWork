@@ -25,7 +25,7 @@ public class CollectionEx {
 		PrintList(myList);
 		Collections.reverse(myList);
 		PrintList(myList);
-		int index = Collections.binarySearch(myList, "아바타") + 1;
-		System.out.println("아바타는 " + index +"번째 요소입니다.");
+		int index = Collections.binarySearch(myList, "터미네이터") + 1;
+		System.out.println("터미네이터 " + index +"번째 요소입니다.");
 	}
 }
